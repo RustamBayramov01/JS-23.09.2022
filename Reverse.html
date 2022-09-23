@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+
+</head>
+
+<body>
+
+    <input width="300" id = "InputOne" type ="text" >
+    <input  width="300" id = "InputTwo" type ="text" >
+
+    <button  width="300" onclick="change()">Reverse</button>
+  
+    <script>
+
+        function change(){
+
+                var tmp = document.getElementById("InputOne").value;
+                document.getElementById("InputOne").value = document.getElementById("InputTwo").value;
+                document.getElementById("InputTwo").value = tmp;
+                
+        }
+
+    </script>
+
+
+</body>
+
+</html>
